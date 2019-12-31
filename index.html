@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" type="image/png" href="img/favicon2.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+	<title>Godwin Contracting Services Ltd</title>
+	<script>
+		var floatPanel = new McFloatPanel();
+		/* Float Panel v2016.10.28. Copyright www.menucool.com */
+		function McFloatPanel() {
+			var i = [],
+				s = [],
+				h = "className",
+				t = "getElementsByClassName",
+				d = "length",
+				l = "display",
+				C = "transition",
+				m = "style",
+				B = "height",
+				c = "scrollTop",
+				k = "offsetHeight",
+				a = "fixed",
+				e = document,
+				b = document.documentElement,
+				j = function (a, c, b) {
+					if (a.addEventListener) a.addEventListener(c, b, false);
+					else a.attachEvent && a.attachEvent("on" + c, b)
+				},
+				o = function (c, d) {
+					if (typeof getComputedStyle != "undefined") var b = getComputedStyle(c, null);
+					else b = c.currentStyle;
+					return b ? b[d] : a
+				},
+				L = function () {
+					var a = e.body;
+					return Math.max(a.scrollHeight, a[k], b.clientHeight, b.scrollHeight, b[k])
+				},
+				O = function (a, c) {
+					var b = a[d];
+					while (b--)
+						if (a[b] === c) return true;
+					return false
+				},
+				g = function (b, a) {
+					return O(b[h].split(" "), a)
+				},
+				q = function (a, b) {
+					if (!g(a, b))
+						if (!a[h]) a[h] = b;
+						else a[h] += " " + b
+				},
+				p = function (a, f) {
+					if (a[h] && g(a, f)) {
+						for (var e = "", c = a[h].split(" "), b = 0, i = c[d]; b < i; b++)
+							if (c[b] !== f) e += c[b] + " ";
+						a[h] = e.replace(/^\s+|\s+$/g, "")
+					}
+				},
+				n = function () {
+					return window.pageYOffset || b[c]
+				},
+				z = function (a) {
+					return a.getBoundingClientRect().top
+				},
+				F = function (b) {
+					var c = n();
+					if (c > b.oS && !g(b, a)) q(b, a);
+					else g(b, a) && c < b.oS && p(b, a)
+				},
+				x = function () {
+					for (var a = 0; a < s[d]; a++) J(s[a])
+				},
+				J = function (a) {
+					if (a.oS) {
+						a.fT && clearTimeout(a.fT);
+						a.fT = setTimeout(function () {
+							if (a.aF) F(a);
+							else y(a)
+						}, 50)
+					} else y(a)
+				},
+				w = function (d, c, b) {
+					p(d, a);
+					c[l] = "none";
+					b.position = b.top = ""
+				},
+				y = function (c) {
+					var j = z(c),
+						f = c[k],
+						e = c[m],
+						d = c.pH[m],
+						h = n();
+					if (j < c.oT && h > c.oS && !g(c, a) && (window.innerHeight || b.clientHeight) > f) {
+						c.tP = h + j - c.oT;
+						var p = L();
+						if (f > p - c.tP - f) var i = f;
+						else i = 0;
+						d[l] = "block";
+						d[C] = "none";
+						d[B] = f + 1 + "px";
+						c.pH[k];
+						d[C] = "height .3s";
+						d[B] = i + "px";
+						q(c, a);
+						e.position = a;
+						e.top = c.oT + "px";
+						if (o(c, "position") != a) d[l] = "none"
+					} else if (g(c, a) && (h < c.tP || h < c.oS)) {
+						var s = o(c, "animation");
+						if (c.oS && c.classList && s.indexOf("slide-down") != -1) {
+							var r = o(c, "animationDuration");
+							c.classList.remove(a);
+							e.animationDirection = "reverse";
+							e.animationDuration = "300ms";
+							void c[k];
+							c.classList.add(a);
+							setTimeout(function () {
+								w(c, d, e);
+								e.animationDirection = "normal";
+								e.animationDuration = r
+							}, 300)
+						} else w(c, d, e)
+					}
+				},
+				I = function () {
+					var f = [],
+						c, b;
+					if (e[t]) {
+						f = e[t]("float-panel");
+						i = e[t]("slideanim")
+					} else {
+						var k = e.getElementsByTagName("*");
+						c = k[d];
+						while (c--) g(k[c], "float-panel") && f.push(k[c])
+					}
+					c = f[d];
+					for (var h = 0; h < c; h++) {
+						b = s[h] = f[h];
+						b.oT = parseInt(b.getAttribute("data-top") || 0);
+						b.oS = parseInt(b.getAttribute("data-scroll") || 0);
+						if (b.oS > 20 && o(b, "position") == a) b.aF = 1;
+						b.pH = e.createElement("div");
+						b.pH[m].width = b.offsetWidth + "px";
+						b.pH[m][l] = "none";
+						b.parentNode.insertBefore(b.pH, b.nextSibling)
+					}
+					if (s[d]) {
+						setTimeout(x, 160);
+						j(window, "scroll", x)
+					}
+				},
+				f, D = 200,
+				E = 0,
+				r, u, H = function () {
+					return window.innerWidth || b.clientWidth || e.body.clientWidth
+				};
+
+			function K() {
+				if (!r) r = setInterval(function () {
+					var a = e.body;
+					if (a[c] < 3) a[c] = 0;
+					else a[c] = a[c] / 1.3;
+					if (b[c] < 3) b[c] = 0;
+					else b[c] = b[c] / 1.3;
+					if (!n()) {
+						clearInterval(r);
+						r = null
+					}
+				}, 14)
+			}
+
+			function A() {
+				clearTimeout(u);
+				if (n() > D && H() > E) {
+					u = setTimeout(function () {
+						p(f, "mcOut")
+					}, 60);
+					f[m][l] = "block"
+				} else {
+					q(f, "mcOut");
+					u = setTimeout(function () {
+						f[m][l] = "none"
+					}, 500)
+				}
+			}
+			var N = function () {
+					f = e.getElementById("backtop");
+					if (f) {
+						var a = f.getAttribute("data-v-w");
+						if (a) {
+							a = a.replace(/\s/g, "").split(",");
+							D = parseInt(a[0]);
+							if (a[d] > 1) E = parseInt(a[1])
+						}
+						j(f, "click", K);
+						j(window, "scroll", A);
+						A()
+					}
+				},
+				v = function () {
+					for (var c = n(), e = c + window.innerHeight, g = i[d], b, f, a = 0; a < g; a++) {
+						b = c + z(i[a]), f = b + i[a][k];
+						if (b < e) q(i[a], "slide");
+						else p(i[a], "slide")
+					}
+				},
+				G = function () {
+					if (i[d]) {
+						j(window, "scroll", v);
+						v()
+					}
+				},
+				M = function () {
+					I();
+					N();
+					G()
+				};
+			j(window, "load", M);
+			j(document, "touchstart", function () {})
+		}
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Check if there are any navbar burgers
+			if ($navbarBurgers.length > 0) {
+
+				// Add a click event on each of them
+				$navbarBurgers.forEach(el => {
+					el.addEventListener('click', () => {
+
+						// Get the target from the "data-target" attribute
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+
+						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+
+					});
+				});
+			}
+
+		});
+	</script>
+</head>
+
+<body class="bg-img">
+	<!-- Header containing navbar and carousel -->
+	<div class="wrapper">
+		<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a href="index.html">
+					<img src="img/logo.png" alt="logo">
+				</a>
+
+				<a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainnavbar">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+
+			</div>
+
+			<div id="mainnavbar" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item">
+						HOME
+					</a>
+
+					
+					<a href="#services" class="navbar-item">
+						OUR SERVICES
+					</a>
+					<a href="#clients" class="navbar-item">
+						OUR CLIENTS
+					</a> 
+					<a href="#about" class="navbar-item">
+						ABOUT US
+					</a>
+					<a href="#testimonials" class="navbar-item">
+						TESTIMONIALS
+					</a>
+					<a href="#contact" class="navbar-item">
+						CONTACT US
+					</a>
+				</div>
+			</div>
+		</nav>
+
+	<!-- slidwshow carousel -->
+		<div class="main-carousel"
+			data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": true }'>
+			<div class="carousel-cell"><img class="image" src="img/show1.jpg" alt="">
+				<div class="overlay"></div>
+			</div>
+			<div class="carousel-cell"><img class="image" src="img/show2.jpg" alt="">
+				<div class="overlay"></div>
+			</div>
+			<div class="carousel-cell"><img class="image" src="img/visitor-centre/1.jpg" alt="">
+				<div class="overlay"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hero-body slideanim">
+		<div class="container" id="services">
+			<h1 class="title">
+				Our Services
+			</h1>
+			<h2 class="subtitle has-text-justified">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et explicabo alias ex quos error
+				quia ab obcaecati sint blanditiis veritatis ad voluptate, aperiam, autem, dicta repellendus nihil
+				nesciunt odio.
+			</h2>
+			<div class="tile is-ancestor">
+				<div class="tile is-parent">
+					<a href="refurbishment.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/refurb.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">Refurbishment</p>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="tile is-parent">
+					<a href="projectmanagement.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/show2.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">Project management</p>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="tile is-parent">
+					<a href="heritage.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/bridgend/7.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">Heritage</p>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="tile is-parent">
+					<a href="newbuild.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/show3.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">New build</p>
+							</div>
+						</article>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="hero-body slideanim">
+		<div class="container" id="clients">
+			<h1 class="title">
+				Our Clients
+			</h1>
+			<h2 class="subtitle has-text-justified">
+				Some of our clients include MOD, NHS
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et explicabo alias ex quos error
+				quia ab obcaecati sint blanditiis veritatis ad voluptate, aperiam, autem, dicta repellendus nihil
+				nesciunt odio.
+			</h2>
+			<div class="tile is-ancestor">
+				<div class="tile is-parent">
+					<a href="mod.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/refurb.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">MOD</p>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="tile is-parent">
+					<a href="nhs.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/show2.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">NHS</p>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="tile is-parent">
+					<a href="heritage.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/bridgend/7.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">thingy</p>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="tile is-parent">
+					<a href="newbuild.html">
+						<article class="tile is-child box slideanim">
+							<img src="img/show3.jpg" alt="">
+							<div class="imghover">
+								<p class="subtitle">thingy</p>
+							</div>
+						</article>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="hero-body slideanim">
+		<div class="container" id="about">
+			<h1 class="title">
+				About us
+			</h1>
+			<h2 class="subtitle has-text-justified">
+				Godwin Contracting Services Ltd is an established building and refurbishment contractor offering a range
+				of services: both internal and external refurbishment, fit out, new build and property extensions.
+				Accommodating private and commercial works, carried out in live and occupied environments or with
+				operating restrictions in place, our range of experience enables us to deliver to our client’s
+				expectations.</h2>
+			<h2 class="subtitle has-text-justified">Working with firm values and a strong family ethos, we believe in
+				constructing a better
+				environment for
+				the future, in the work place throughout commercial projects, in homes with our residential and private
+				operations and a living one with considerate values and responsible work practices when it comes to
+				waste and sourcing of materials.</h2>
+			<h2 class="subtitle has-text-justified">With three generations of qualitative experience, establishing and
+				enviable reputation
+				in the commercial
+				building trade. We adapt to the changing need of clients either through competitive tender, directly or
+				through partnering, retaining quality and strictly keeping to work schedules.</h2>
+
+		</div>
+	</div>
+
+	<!--<div class="hero-body">
+		<div class="container" id="work">
+			<h1 class="title">
+				Our work
+			</h1>
+			<h2 class="subtitle">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et explicabo alias ex quos error
+				quia ab obcaecati sint blanditiis veritatis ad voluptate, aperiam, autem, dicta repellendus nihil
+				nesciunt odio.
+			</h2>
+		</div>
+	</div> -->
+
+
+
+	<div class="hero-body slideanim">
+		<div class="container" id="testimonials">
+			<h1 class="title">
+				Testimonials
+			</h1>
+			<h2 class="subtitle has-text-justified">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et explicabo alias ex quos error
+				quia ab obcaecati sint blanditiis veritatis ad voluptate, aperiam, autem, dicta repellendus nihil
+				nesciunt odio.
+			</h2>
+			<div class="content">
+				<a href="Scan2Email.pdf">
+					<blockquote>The contractor worked closely with the facility managers and project officer to minimise
+						disruption to builder users and the general public. Variations were priced fairly and the works
+						were
+						completed within the contract period.
+						Godwin Contracting Services have proven to be a reliable and professional company carrying out
+						works
+						to a high standard and in accordance with the contract terms and conditions for cost and
+						timescales.
+						- Caerphilly County Borough Council
+					</blockquote>
+				</a>
+			</div>
+			<div class="content">
+				<a href="Scan3Email.pdf">
+					<blockquote>The project was delivered to the agreed time and cost constraints and the quality of
+						work was very good.
+						Godwin Contracting Services managed the work very well on site and minimised disruption to the
+						school and pupils.
+						We recommend them to you for any future works. - Trinity Fields Special School
+					</blockquote>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="hero-body slideanim">
+		<div class="container" id="contact">
+			<h1 class="title">
+				Contact us
+			</h1>
+			<div class="details">
+				<span class="tag subtitle">Telephone:</span>
+				<span class="text subtitle"><a href="tel:02920626524">029 20626524</a></span>
+			</div>
+			<div class="details">
+				<span class="tag subtitle">E-mail:</span>
+				<span class="text subtitle"><a
+						href="mailto:info@godwincontractingservices.com">info@godwincontractingservices.com</a></span>
+			</div>
+			<div class="details">
+				<span class="tag subtitle">Address:</span>
+				<span class="text subtitle"><a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House, Mountain Road,
+						CAERPHILLY, CF83 8ER
+					</a></span>
+			</div>
+			<br> <br> <br>
+
+			<form>
+				<h2 class="subtitle">SEND AN ENQUIRY: </h2>
+				<fieldset>
+					<div class="field">
+						<label class="label">Name</label>
+						<input class="input" type="text" placeholder="Bob Smith">
+					</div>
+					<div class="field">
+						<label class="label">Email</label>
+						<input class="input" type="text" placeholder="bobsmith@mail.com">
+					</div>
+					<div class="field">
+						<label class="label">Phone number</label>
+						<input class="input" type="text" placeholder="07123456789">
+					</div>
+					<div class="field">
+						<label class="label">Message</label>
+						<textarea class="textarea" placeholder="Your message"></textarea>
+					</div>
+					<div class="control">
+						<button class="button is-pulled-right">Submit</button>
+					</div>
+		</div>
+		</fieldset>
+		</form>
+	</div>
+	</div>
+	</div>
+
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<img src="img/footer.png" alt="">
+
+			<p>Telephone: <a href="tel:02920626524">029 20626524</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:
+				<a href="mailto:info@godwincontractingservices.com">info@godwincontractingservices.com</a></p>
+			<p><a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House, Mountain Road, CAERPHILLY, CF83 8ER
+				</a></p>
+			<p>Copyright © 2019 Godwin Contracting Services Ltd.</p>
+
+			<p>
+				<a href="privacy-policy.pdf">Privacy Policy</a>
+				&nbsp;|&nbsp;
+				<a href="cookies-policy.pdf">Cookies Policy</a>
+				&nbsp;|&nbsp;
+				<a href="terms-and-conditions.pdf">Terms and Conditions</a>
+			</p>
+		</div>
+
+	</footer>
+</body>
+
+</html>
