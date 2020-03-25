@@ -5,37 +5,99 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hello Bulma!</title>
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 </head>
 
 <body>
-	<!-- Start Hero Carousel -->
-	<section class="hero is-fullheight has-carousel">
-		<div id="carousel-demo" class="hero-carousel">
-			<div class="item-1 has-background">
-				<img src="img/show1.jpg" alt="" class="is-background">
-			</div>
-			<div class="item-2 has-background">
-				<img src="img/show3.jpg" alt="" class="is-background">
-			</div>
-			<div class="item-3 has-background">
-				<img src="img/show2.jpg" alt="" class="is-background">
+	<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a href="index.html">
+				<img src="img/logo.png" alt="logo">
+			</a>
+
+			<a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainnavbar">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+
+		</div>
+
+		<div id="mainnavbar" class="navbar-menu">
+			<div class="navbar-end">
+				<a href="index.html" class="navbar-item">
+					HOME
+				</a>
+
+				<a href="#services" class="navbar-item">
+					OUR SERVICES
+				</a>
+				<a href="#clients" class="navbar-item">
+					OUR CLIENTS
+				</a>
+				<a href="#about" class="navbar-item">
+					ABOUT US
+				</a>
+				<a href="#testimonials" class="navbar-item">
+					TESTIMONIALS
+				</a>
+				<a href="#contact" class="navbar-item">
+					CONTACT US
+				</a>
 			</div>
 		</div>
-		<div class="hero-head"></div>
-		<div class="hero-body"></div>
-		<div class="hero-foot"></div>
+	</nav>
+	<!-- Start Hero Carousel -->
+	<section class="hero is-fullheight-with-navbar has-carousel">
+		<div class="hero-carousel">
+			<div class="is-hidden-mobile has-background">
+				<img src="img/show1.jpg" alt="" class="is-background">
+			</div>
+			<div class="is-hidden-desktop has-background">
+				<img src="img/show1mobile.jpg" alt="" class="is-background">
+			</div>
+			<div class="is-hidden-mobile has-background">
+				<img src="img/show2.jpg" alt="" class="is-background">
+			</div>
+			<div class="is-hidden-desktop has-background">
+				<img src="img/show2mobile.jpg" alt="" class="is-background">
+			</div>
+			<div class="is-hidden-mobile has-background">
+				<img src="img/visitor-centre/1.jpg" alt="" class="is-background">
+			</div>
+			<div class="is-hidden-desktop has-background">
+				<img src="img/visitor-centre/1mobile.jpg" alt="" class="is-background">
+				<!--you have to make the images smaller on photoshop using contentware and media queries
+				use a class for each image eg item 1, 2, 3... and then in css
+			.item-->
+			</div>
+		</div>
 	</section>
 	<!-- End Hero Carousel -->
 
 	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
 	<script>
-		bulmaCarousel.attach('#carousel-demo', {
+		bulmaCarousel.attach('.hero-carousel', {
 			slidesToScroll: 1,
 			slidesToShow: 1,
 			loop: true,
-			autoplay: true
+			autoplay: true,
+			pagination: false,
+			breakpoints: [{
+				changePoint: 480,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}, {
+				changePoint: 640,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}, {
+				changePoint: 768,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}]
 		});
 	</script>
 </body>
