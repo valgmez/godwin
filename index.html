@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="has-navbar-fixed-top">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon2.png" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
 	<title>Godwin Contracting Services Ltd</title>
 	<script>
@@ -261,61 +262,72 @@
 
 <body class="bg-img">
 	<!-- Header containing navbar and carousel -->
-	<div class="wrapper">
-		<nav class="navbar is-light" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-				<a href="index.html">
-					<img src="img/logo.png" alt="logo">
+	<!-- <div class="wrapper"> -->
+	<nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a href="index.html">
+				<img src="img/logo.png" alt="logo">
+			</a>
+
+			<a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainnavbar">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+
+		</div>
+
+		<div id="mainnavbar" class="navbar-menu">
+			<div class="navbar-end">
+				<a href="index.html" class="navbar-item">
+					HOME
 				</a>
 
-				<a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainnavbar">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
+				<a href="#services" class="navbar-item">
+					OUR SERVICES
 				</a>
-
-			</div>
-
-			<div id="mainnavbar" class="navbar-menu">
-				<div class="navbar-end">
-					<a href="index.html" class="navbar-item">
-						HOME
-					</a>
-
-					
-					<a href="#services" class="navbar-item">
-						OUR SERVICES
-					</a>
-					<a href="#clients" class="navbar-item">
-						OUR CLIENTS
-					</a> 
-					<a href="#about" class="navbar-item">
-						ABOUT US
-					</a>
-					<a href="#testimonials" class="navbar-item">
-						TESTIMONIALS
-					</a>
-					<a href="#contact" class="navbar-item">
-						CONTACT US
-					</a>
-				</div>
-			</div>
-		</nav>
-
-	<!-- slideshow carousel -->
-		<div class="main-carousel"
-			data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": true }'>
-			<div class="carousel-cell"><img class="image" src="img/show1.jpg" alt="">
-				<div class="overlay"></div>
-			</div>
-			<div class="carousel-cell"><img class="image" src="img/show2.jpg" alt="">
-				<div class="overlay"></div>
-			</div>
-			<div class="carousel-cell"><img class="image" src="img/visitor-centre/1.jpg" alt="">
-				<div class="overlay"></div>
+				<a href="#clients" class="navbar-item">
+					OUR CLIENTS
+				</a>
+				<a href="#about" class="navbar-item">
+					ABOUT US
+				</a>
+				<a href="#testimonials" class="navbar-item">
+					TESTIMONIALS
+				</a>
+				<a href="#contact" class="navbar-item">
+					CONTACT US
+				</a>
 			</div>
 		</div>
-	</div>
+	</nav>
+
+	<!-- slideshow carousel -->
+	<section class="hero is-fullheight-with-navbar has-carousel">
+		<div class="hero-carousel">
+			<div class="is-hidden-mobile image is-16by9">
+				<img src="img/turner-house/MAP-14.jpg" alt="" class="is-background">
+			</div>
+			<div class="is-hidden-mobile has-background">
+				<img src="img/show1.jpg" alt="" class="is-background">
+			</div>
+			<!-- <div class="is-hidden-desktop has-background">
+				<img src="img/show1mobile.jpg" alt="" class="is-background">
+			</div> -->
+			<!-- <div class="is-hidden-desktop has-background">
+				<img src="img/show2mobile.jpg" alt="" class="is-background">
+			</div> -->
+			<div class="is-hidden-mobile image is-16by9">
+				<img src="img/visitor-centre/1.jpg" alt="" class="is-background">
+			</div>
+			<!-- 	<div class="is-hidden-desktop has-background">
+				<img src="img/visitor-centre/1mobile.jpg" alt="" class="is-background">
+				you have to make the images smaller on photoshop using contentware and media queries
+				use a class for each image eg item 1, 2, 3... and then in css
+			.item
+			</div> -->
+		</div>
+	</section>
 
 
 	<div class="hero-body slideanim">
@@ -332,7 +344,7 @@
 				<div class="tile is-parent">
 					<a href="refurbishment.html">
 						<article class="tile is-child box slideanim">
-							<img src="img/refurb.jpg" alt="">
+							<img src="img/turner-house/MAP-14.jpg" alt="">
 							<div class="imghover">
 								<p class="subtitle">Refurbishment</p>
 							</div>
@@ -528,7 +540,8 @@
 			</div>
 			<div class="details">
 				<span class="tag subtitle">Address:</span>
-				<span class="text subtitle"><a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House, Mountain Road,
+				<span class="text subtitle"><a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House, Mountain
+						Road,
 						CAERPHILLY, CF83 8ER
 					</a></span>
 			</div>
@@ -583,6 +596,31 @@
 		</div>
 
 	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+	<script>
+		bulmaCarousel.attach('.hero-carousel', {
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			loop: true,
+			autoplay: true,
+			pagination: false,
+			breakpoints: [{
+				changePoint: 480,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}, {
+				changePoint: 640,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}, {
+				changePoint: 768,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}]
+		});
+	</script>
+
 </body>
 
 </html>
