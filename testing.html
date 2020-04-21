@@ -53,12 +53,16 @@
 	<section class="hero is-fullheight-with-navbar has-carousel">
 
 		<div class="hero-carousel">
-			<div class="item 1is-hidden-mobile has-background">
-				<img src="img/show1.jpg" alt="" class="is-background">
+			<div class="has-background">
+				<picture>
+					<source srcset="img/show1mobile.jpg" media="(max-width: 768px)">
+					<img srcset="img/show1.jpg" alt="..." class="is-background">
+				</picture>
+				<!-- <img src="img/show1.jpg" alt="" class="is-background"> -->
 			</div>
-			<div class="is-hidden-desktop has-background">
+			<!-- <div class="is-hidden-desktop has-background">
 				<img src="img/show1mobile.jpg" alt="" class="is-background">
-			</div>
+			</div> -->
 			<div class="is-hidden-mobile has-background">
 				<img src="img/show2.jpg" alt="" class="is-background">
 			</div>

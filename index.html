@@ -305,26 +305,38 @@
 	<!-- slideshow carousel -->
 	<section class="hero is-fullheight-with-navbar has-carousel">
 		<div class="hero-carousel">
-			<div class="is-hidden-mobile image is-16by9">
+
+			<div class="has-background">
+				<picture>
+					<source srcset="img/turner-house/MAP-14mobile.jpg" media="(max-width: 768px)" class="is-background">
+					<img srcset=" img/turner-house/MAP-14.jpg" alt="..." class="is-background">
+				</picture>
+			</div>
+
+			<div class="has-background">
+				<picture>
+					<source srcset="img/show1mobile.jpg" media="(max-width: 768px)" class="is-background">
+					<img srcset="img/show1.jpg" alt="..." class="is-background">
+				</picture>
+			</div>
+
+			<div class="has-background">
+				<picture>
+					<source srcset="img/visitor-centre/1mobile.jpg" media="(max-width: 768px)" class="is-background">
+					<img srcset="img/visitor-centre/1.jpg" alt="..." class="is-background">
+				</picture>
+			</div>
+
+			<!-- <div class="item1 image is-16by9">
 				<img src="img/turner-house/MAP-14.jpg" alt="" class="is-background">
-			</div>
-			<div class="is-hidden-mobile has-background">
+			</div> -->
+
+			<!-- 	<div class="item2 has-background">
 				<img src="img/show1.jpg" alt="" class="is-background">
-			</div>
-			<!-- <div class="is-hidden-desktop has-background">
-				<img src="img/show1mobile.jpg" alt="" class="is-background">
 			</div> -->
-			<!-- <div class="is-hidden-desktop has-background">
-				<img src="img/show2mobile.jpg" alt="" class="is-background">
-			</div> -->
-			<div class="is-hidden-mobile image is-16by9">
+
+			<!-- <div class="item3 image is-16by9">
 				<img src="img/visitor-centre/1.jpg" alt="" class="is-background">
-			</div>
-			<!-- 	<div class="is-hidden-desktop has-background">
-				<img src="img/visitor-centre/1mobile.jpg" alt="" class="is-background">
-				you have to make the images smaller on photoshop using contentware and media queries
-				use a class for each image eg item 1, 2, 3... and then in css
-			.item
 			</div> -->
 		</div>
 	</section>
