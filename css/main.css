@@ -212,13 +212,13 @@ body {
   border-radius: 6px;
 }
 
-.columns {
+/* .columns {
   margin-bottom: 0 !important;
 }
 
 .column {
   padding: 0;
-}
+} */
 
 .column .subtitle {
   padding: 4%;
