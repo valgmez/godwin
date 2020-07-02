@@ -13,6 +13,17 @@
 
 .preload img {
   max-height: 70px;
+  animation: logo 1s ease infinite alternate;
+}
+
+@keyframes logo {
+  from {
+    transform: translateY(-25px);
+  }
+
+  to {
+    transform: translateY(25px);
+  }
 }
 
 .preload h3 {
