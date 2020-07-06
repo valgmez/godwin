@@ -41,7 +41,8 @@ body,
 button,
 input,
 select,
-textarea {
+textarea,
+label {
   font-family: "Roboto", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -196,6 +197,12 @@ body {
   background-color: whitesmoke;
 }
 
+.hero.is-dark {
+  background: linear-gradient(rgba(71, 69, 69, 0.74), rgba(68, 67, 67, 0.733)), url(../img/triangle-mosaic.png);
+  background-repeat: repeat;
+  background-color: #4a4a4a;
+}
+
 /* .pagetitle {
   /* background-color: gray; */
 /* background: rgb(240, 108, 0);
@@ -293,14 +300,14 @@ body {
   padding: 0;
 } */
 
-.details {
+/* .details {
   width: 100%;
   display: inline-block;
   font-size: 24px !important;
   padding: 0;
-}
+} */
 
-.details .tag {
+/* .details .tag {
   margin: 0;
   min-width: 200px;
   display: inline-block;
@@ -325,12 +332,17 @@ body {
     padding: 0;
     min-width: 20px;
   }
+} */
+
+.svg-inline--fa {
+  margin-right: 2%;
+  color: #d47427;
 }
 
-.field .label,
+/* .field .label,
 form .subtitle {
   font-weight: 400;
-}
+} */
 
 .input:focus,
 .input:hover,
@@ -338,6 +350,16 @@ form .subtitle {
 .textarea:hover {
   border-color: #d47427;
   box-shadow: 0 0 0 0.125em rgba(241, 108, 0, 0.664);
+  ;
+}
+
+.input.subtitle {
+  color: #282828 !important;
+}
+
+#mapid {
+  height: 300px;
+  z-index: 1;
 }
 
 .button {
@@ -416,4 +438,11 @@ form .subtitle {
 
 #testimonials a {
   color: #4a4a4a;
+}
+
+:target::before {
+  content: '';
+  display: block;
+  height: 10rem;
+  margin-top: -10rem;
 }

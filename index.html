@@ -11,10 +11,17 @@
 		href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&family=Roboto+Slab&display=swap"
 		rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
+		integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
+		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		crossorigin=""></script>
 
 	<title>Godwin Contracting Services Ltd</title>
 	<script src="js/slideanim.js"></script> <!-- animation on scroll-->
@@ -133,7 +140,7 @@
 		</div>
 	</section>
 
-	<div class="hero is-medium">
+	<div class="hero is-large is-dark">
 		<div class="hero-body slideanim">
 			<div class="container" id="services">
 				<div class="pagetitle has-text-centered">
@@ -187,7 +194,7 @@
 		</div>
 	</div>
 
-	<div class="hero is-medium">
+	<div class="hero is-large">
 		<div class="hero-body slideanim">
 			<div class="container" id="clients">
 				<div class="pagetitle has-text-centered">
@@ -286,7 +293,7 @@
 		</div>
 	</div>
 
-	<div class="hero is-medium">
+	<div class="hero is-large is-dark">
 		<div class="hero-body slideanim">
 			<div class="container" id="about">
 				<div class="pagetitle has-text-centered">
@@ -323,7 +330,7 @@
 	</div>
 
 
-	<div class="hero is-medium">
+	<div class="hero is-large">
 		<div class="hero-body slideanim">
 			<div class="container" id="testimonials">
 				<div class="pagetitle has-text-centered">
@@ -369,7 +376,7 @@
 		</div>
 	</div>
 
-	<div class="hero is-medium">
+	<div class="hero is-large is-dark">
 		<div class="hero-body slideanim">
 			<div class="container" id="contact">
 				<div class="pagetitle has-text-centered">
@@ -378,99 +385,132 @@
 					</h1>
 				</div>
 
-				<div class="details">
-					<span class="tag subtitle">Telephone:</span>
-					<span class="text subtitle"><a href="tel:02920626524">029 20626524</a></span>
-				</div>
-				<div class="details">
-					<span class="tag subtitle">E-mail:</span>
-					<span class="text subtitle"><a
-							href="mailto:info@godwincontractingservices.com">info@godwincontractingservices.com</a></span>
-				</div>
-				<div class="details">
-					<span class="tag subtitle">Address:</span>
-					<span class="text subtitle"><a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House,
-							Mountain
-							Road,
-							CAERPHILLY, CF83 8ER
-						</a></span>
-				</div>
-				<br> <br> <br>
+				<div class="columns">
+					<div class="column">
+						<div class="section">
+							<form action="https://formspree.io/mzbjjzwp" method="POST">
+								<fieldset>
+									<div class="field">
+										<label class="subtitle">Name</label>
+										<input class="input subtitle" type="text" placeholder="Your name" name="name">
+									</div>
+									<div class="field">
+										<label class="subtitle">Email</label>
+										<input class="input subtitle" type="text" placeholder="Your email address"
+											name="_replyto">
+									</div>
+									<div class="field">
+										<label class="subtitle">Phone number</label>
+										<input class="input subtitle" type="text" placeholder="Your phone number">
+									</div>
+									<div class="field">
+										<label class="subtitle">Message</label>
+										<textarea class="textarea subtitle" placeholder="Your message"
+											name="message"></textarea>
+									</div>
+									<div class="control">
+										<button class="button is-pulled-right subtitle" type="submit">Submit</button>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
 
-				<form>
-					<h2 class="subtitle">SEND AN ENQUIRY: </h2>
-					<fieldset>
-						<div class="field">
-							<label class="label">Name</label>
-							<input class="input" type="text" placeholder="Bob Smith">
+					<div class="column has-text-justified">
+						<div class="section">
+
+							<h2 class="subtitle"><i class="fas fa-phone-alt"></i> <a href="tel:02920626524"> 029
+									20626524</a></h2>
+
+							<h2 class="subtitle"><i class="far fa-envelope"></i> <a
+									href="mailto:info@godwincontractingservices.com">
+									info@godwincontractingservices.com</a>
+							</h2>
+
+							<h2 class="subtitle"><i class="fas fa-map-marker-alt"></i> <a
+									href="https://www.google.com/maps/place/Godwin+Contracting+Services+Ltd/@51.6064946,-3.2035813,15z/data=!4m13!1m7!3m6!1s0x486e1f289b6dffd7:0xa17d0dc51052bb81!2sBedwas,+Caerphilly+CF83+8ER!3b1!8m2!3d51.6056916!4d-3.1992039!3m4!1s0x0:0x63eccabbf5d9328b!8m2!3d51.6010781!4d-3.1965092">
+									Ty Maen Farm
+									House,
+									Mountain
+									Road,
+									CAERPHILLY, CF83 8ER</a>
+							</h2>
+
+							<a
+								href="https://www.google.com/maps/place/Godwin+Contracting+Services+Ltd/@51.6064946,-3.2035813,15z/data=!4m13!1m7!3m6!1s0x486e1f289b6dffd7:0xa17d0dc51052bb81!2sBedwas,+Caerphilly+CF83+8ER!3b1!8m2!3d51.6056916!4d-3.1992039!3m4!1s0x0:0x63eccabbf5d9328b!8m2!3d51.6010781!4d-3.1965092">
+								<div id="mapid">
+								</div>
+							</a>
+							<script>
+								var mymap = L.map('mapid').setView([51.601072, -3.196542], 11);
+
+								L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+									attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+									maxZoom: 18,
+									id: 'mapbox/streets-v11',
+									tileSize: 512,
+									zoomOffset: -1,
+									accessToken: 'pk.eyJ1IjoidmFsZ29tZXoiLCJhIjoiY2tjYWtybzRuMWtiNTJ5bGo5OGxmaGo1biJ9.Sl1LqzvA4WH3YaeBMvf_3g'
+								}).addTo(mymap);
+
+								var marker = L.marker([51.601072, -3.196542]).addTo(mymap);
+							</script>
+
+
 						</div>
-						<div class="field">
-							<label class="label">Email</label>
-							<input class="input" type="text" placeholder="bobsmith@mail.com">
-						</div>
-						<div class="field">
-							<label class="label">Phone number</label>
-							<input class="input" type="text" placeholder="07123456789">
-						</div>
-						<div class="field">
-							<label class="label">Message</label>
-							<textarea class="textarea" placeholder="Your message"></textarea>
-						</div>
-						<div class="control">
-							<button class="button is-pulled-right">Submit</button>
-						</div>
+
+					</div>
+				</div>
 			</div>
-			</fieldset>
-			</form>
-		</div>
-	</div>
-
-
-	<footer class="footer">
-		<div class="content has-text-centered">
-			<img src="img/footer.png" alt="">
-
-			<p>Telephone: <a href="tel:02920626524">029 20626524</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:
-				<a href="mailto:info@godwincontractingservices.com">info@godwincontractingservices.com</a></p>
-			<p><a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House, Mountain Road, CAERPHILLY, CF83 8ER
-				</a></p>
-			<p>Copyright © 2019 Godwin Contracting Services Ltd.</p>
-
-			<p>
-				<a href="privacy-policy.pdf">Privacy Policy</a>
-				&nbsp;|&nbsp;
-				<a href="cookies-policy.pdf">Cookies Policy</a>
-				&nbsp;|&nbsp;
-				<a href="terms-and-conditions.pdf">Terms and Conditions</a>
-			</p>
 		</div>
 
-	</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-	<script src="./js/preloader.js"></script>
-	<script>
-		bulmaCarousel.attach('.hero-carousel', {
-			slidesToScroll: 1,
-			slidesToShow: 1,
-			loop: true,
-			autoplay: true,
-			pagination: false,
-			breakpoints: [{
-				changePoint: 480,
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<img src="img/footer.png" alt="">
+
+				<p>Telephone: <a href="tel:02920626524">029 20626524</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:
+					<a href="mailto:info@godwincontractingservices.com">info@godwincontractingservices.com</a></p>
+				<p><a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House, Mountain Road, CAERPHILLY, CF83
+						8ER
+					</a></p>
+				<p>Copyright © 2019 Godwin Contracting Services Ltd.</p>
+
+				<p>
+					<a href="privacy-policy.pdf">Privacy Policy</a>
+					&nbsp;|&nbsp;
+					<a href="cookies-policy.pdf">Cookies Policy</a>
+					&nbsp;|&nbsp;
+					<a href="terms-and-conditions.pdf">Terms and Conditions</a>
+				</p>
+			</div>
+
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+		<script src="./js/preloader.js"></script>
+		<script>
+			bulmaCarousel.attach('.hero-carousel', {
+				slidesToScroll: 1,
 				slidesToShow: 1,
-				slidesToScroll: 1
-			}, {
-				changePoint: 640,
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}, {
-				changePoint: 768,
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}]
-		});
-	</script>
+				loop: true,
+				autoplay: true,
+				pagination: false,
+				breakpoints: [{
+					changePoint: 480,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}, {
+					changePoint: 640,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}, {
+					changePoint: 768,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}]
+			});
+		</script>
 
 </body>
 
