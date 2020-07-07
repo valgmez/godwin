@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html lang="en" class="has-navbar-fixed-top">
 
 <head>
+	<title>Godwin Contracting Services Ltd</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Construction company based in South Wales">
+	<meta name="author" content="Godwin Contracting Services LTD">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- stylesheets, javascript, fonts -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&family=Roboto+Slab&display=swap"
 		rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
 		integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
 		crossorigin="anonymous"></script>
@@ -19,11 +24,11 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 		crossorigin="" />
+	<!-- map css-->
 	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
 		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-		crossorigin=""></script>
-
-	<title>Godwin Contracting Services Ltd</title>
+		crossorigin="">
+	</script> <!-- map js-->
 	<script src="js/slideanim.js"></script> <!-- animation on scroll-->
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
@@ -52,14 +57,16 @@
 
 		});
 	</script> <!-- navbar burger menu -->
+
 </head>
 
 <body class="bg-img">
 
+	<!-- preloader logo floating -->
 	<div class="preload">
 		<img src="./img/logoblack-min.png" alt="logo" height="70px">
-		<!-- <h3 class="subtitle is-5">loading...</h3> -->
 	</div>
+
 	<!-- Header containing navbar and carousel -->
 	<!-- <div class="wrapper"> -->
 	<nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
@@ -140,6 +147,7 @@
 		</div>
 	</section>
 
+	<!-- our services -->
 	<div class="hero is-large is-dark">
 		<div class="hero-body slideanim">
 			<div class="container" id="services">
@@ -154,10 +162,10 @@
 					quia ab obcaecati sint blanditiis veritatis ad voluptate, aperiam, autem, dicta repellendus nihil
 					nesciunt odio.
 				</h2>
-				<div class="tile is-ancestor">
+				<div class="tile is-ancestor ">
 					<div class="tile is-parent">
 						<a href="refurbishment.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/turnerhousebox-min.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">Refurbishment</p>
@@ -168,7 +176,7 @@
 
 					<div class="tile is-parent">
 						<a href="newbuild.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/private-conservatory/MAP-33.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">New Build</p>
@@ -179,7 +187,7 @@
 
 					<div class="tile is-parent">
 						<a href="maintenance.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/big-pit/pit-min.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">Maintenance</p>
@@ -194,6 +202,7 @@
 		</div>
 	</div>
 
+	<!-- our clients -->
 	<div class="hero is-large">
 		<div class="hero-body slideanim">
 			<div class="container" id="clients">
@@ -213,7 +222,7 @@
 				<div class="tile is-ancestor">
 					<div class="tile is-parent">
 						<a href="mod.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/refurb.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">MOD</p>
@@ -223,7 +232,7 @@
 					</div>
 					<div class="tile is-parent">
 						<a href="nhs.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/show2.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">NHS</p>
@@ -233,7 +242,7 @@
 					</div>
 					<div class="tile is-parent">
 						<a href="south-wales-police.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/police-station-barry/MAP-12-min.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">South Wales Police</p>
@@ -248,7 +257,7 @@
 				<div class="tile is-ancestor">
 					<div class="tile is-parent">
 						<a href="museum-wales.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/national-museum/IMG_3372.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">National Museum Wales</p>
@@ -258,7 +267,7 @@
 					</div>
 					<div class="tile is-parent">
 						<a href="caerphilly-county-council.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/visitor-centre/4.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">Caerphilly County Council</p>
@@ -268,7 +277,7 @@
 					</div>
 					<div class="tile is-parent">
 						<a href="church-wales.html">
-							<article class="tile is-child box slideanim">
+							<article class="tile is-child box">
 								<img src="img/christ-the-king/church-2.jpg" alt="">
 								<div class="imghover">
 									<p class="subtitle">Church of Wales</p>
@@ -293,6 +302,7 @@
 		</div>
 	</div>
 
+	<!-- about us -->
 	<div class="hero is-large is-dark">
 		<div class="hero-body slideanim">
 			<div class="container" id="about">
@@ -329,7 +339,7 @@
 		</div>
 	</div>
 
-
+	<!-- testimonials -->
 	<div class="hero is-large">
 		<div class="hero-body slideanim">
 			<div class="container" id="testimonials">
@@ -338,8 +348,72 @@
 						Testimonials
 					</h1>
 				</div>
+				<div class="container has-text-centered">
+					<div class="columns">
+						<div class="column has-background-white-bis">
+							<p class="block">The contractor worked closely with the facility managers and project
+								officer to minimise disruption to builder users and the general public. Variations
+								were
+								priced fairly and the works were completed within the contract period. Godwin
+								Contracting Services have proven to be a reliable and professional company carrying
+								out
+								works to a high standard and in accordance with the contract terms and conditions
+								for
+								cost and timescales.</p>
+							<div class="level">
+								<div class="level-item">
+									<figure class="image" style="width: 128px;"><img
+											src="https://www.caerphilly.gov.uk/getattachment/daa39e0d-65f5-4884-8c3b-2ef8d61f62b5/Consultation-starts-on-size-and-number-of-electora.aspx"
+											alt="logo" class="is-rounded"></figure>
+								</div>
+							</div>
+							<p class="subtitle is-6">Pepe - CEO at K-Hole</p>
+						</div>
 
-				<h2 class="subtitle has-text-justified">
+						<div class="column has-background-white-bis">
+							<p class="block">The contractor worked closely with the facility managers and project
+								officer to minimise disruption to builder users and the general public. Variations
+								were
+								priced fairly and the works were completed within the contract period. Godwin
+								Contracting Services have proven to be a reliable and professional company carrying
+								out
+								works to a high standard and in accordance with the contract terms and conditions
+								for
+								cost and timescales.
+							</p>
+							<div class="level">
+								<div class="level-item">
+									<figure class="image" style="width: 128px;"><img
+											src="https://www.caerphilly.gov.uk/getattachment/daa39e0d-65f5-4884-8c3b-2ef8d61f62b5/Consultation-starts-on-size-and-number-of-electora.aspx"
+											alt="logo" class="is-rounded"></figure>
+								</div>
+							</div>
+							<p class="subtitle is-6">Pepe - CEO at K-Hole</p>
+						</div>
+						<div class="column has-background-white-bis">
+							<p class="block">The project was delivered to the agreed time and cost constraints and
+								the
+								quality of
+								work was very good.
+								Godwin Contracting Services managed the work very well on site and minimised
+								disruption
+								to
+								the
+								school and pupils.
+								We recommend them to you for any future works.</p>
+							<div class="level">
+								<div class="level-item">
+									<figure class="image is-64x64"><img
+											src="http://www.trinityfieldsschoolandresourcecentre.co.uk/images/logo.jpg"
+											alt="logo" class="is-rounded"></figure>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- <h2 class="subtitle has-text-justified">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et explicabo alias ex quos error
 					quia ab obcaecati sint blanditiis veritatis ad voluptate, aperiam, autem, dicta repellendus nihil
 					nesciunt odio.
@@ -371,7 +445,7 @@
 							We recommend them to you for any future works. - Trinity Fields Special School
 						</blockquote>
 					</a>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
@@ -427,7 +501,7 @@
 									info@godwincontractingservices.com</a>
 							</h2>
 
-							<h2 class="subtitle"><i class="fas fa-map-marker-alt"></i> <a
+							<h2 class="subtitle"><i class="fas fa-map-marker-alt" style="margin-left: 4px;"></i> <a
 									href="https://www.google.com/maps/place/Godwin+Contracting+Services+Ltd/@51.6064946,-3.2035813,15z/data=!4m13!1m7!3m6!1s0x486e1f289b6dffd7:0xa17d0dc51052bb81!2sBedwas,+Caerphilly+CF83+8ER!3b1!8m2!3d51.6056916!4d-3.1992039!3m4!1s0x0:0x63eccabbf5d9328b!8m2!3d51.6010781!4d-3.1965092">
 									Ty Maen Farm
 									House,
