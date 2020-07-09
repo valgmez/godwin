@@ -226,12 +226,10 @@ body {
 }
 
 .tile.is-child {
-  min-height: 100%;
+  height: 90%;
   min-width: 100%;
   max-width: 100%;
 }
-
-
 
 .tile.is-child.box {
   padding: 0;
@@ -241,8 +239,7 @@ body {
 
 .tile.is-child.box img {
   /* object-fit: cover; enlarges images too much */
-  height: 35vh;
-  /*make bigger if images allow*/
+  height: 100%;
   width: 100%;
   border-radius: 6px;
 }
