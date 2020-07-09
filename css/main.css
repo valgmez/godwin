@@ -346,6 +346,12 @@ body {
   color: #d47427;
 }
 
+footer .svg-inline--fa {
+  margin-right: 2px;
+  color: inherit;
+}
+
+
 /* .field .label,
 form .subtitle {
   font-weight: 400;
@@ -402,7 +408,7 @@ form .subtitle {
   background-color: whitesmoke;
   color: #363636;
   padding-bottom: 2%;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 }
 
 .footer a {
