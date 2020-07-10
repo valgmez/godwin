@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="has-navbar-fixed-top">
+
+<head>
+  <title>MOD Army Camp | Godwin Contracting Services Ltd</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Work undertaken at MOD Army Camp Base in Bridgend">
+  <meta name="author" content="Godwin Contracting Services LTD">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- stylesheets, javascript, fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
+    integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <script src="js/slideanim.js"></script> <!-- animation on scroll-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script> <!-- navbar burger menu -->
+
+</head>
+
+<body class="bg-img">
+
+  <!-- preloader logo floating -->
+  <div class="preload">
+    <img src="./img/logoblack-min.png" alt="logo" height="70px">
+  </div>
+
+
+  <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="index.html">
+        <img src="img/logo.png" alt="logo" />
+      </a>
+
+      <a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainnavbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="mainnavbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="index.html" class="navbar-item">
+          HOME
+        </a>
+        <a href="index.html#services" class="navbar-item">
+          OUR SERVICES
+        </a>
+        <a href="#work" class="navbar-item">
+          OUR CLIENTS
+        </a>
+        <a href="index.html#about" class="navbar-item">
+          ABOUT US
+        </a>
+        <a href="index.html#testimonials" class="navbar-item">
+          TESTIMONIALS
+        </a>
+        <a href="index.html#contact" class="navbar-item">
+          CONTACT US
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-fullheight">
+    <!-- <div class="hero-head">
+      <div class="pagetitle has-text-centered">
+        <h1 class="title is-4">
+          M.O.D. Bridgend Army Camp
+        </h1>
+      </div>
+    </div> -->
+
+    <div class="hero-body is-block" style="padding-top: 5rem;">
+      <section class="container">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="carousel"
+              style="overflow: hidden; width: 100%; line-height:0; box-shadow: 1px 2px 30px -10px gray;">
+              <div class="has-background">
+                <img src="img/army-camp/8.jpg" alt="" class="is-background">
+              </div>
+              <div class="has-background">
+                <img src="img/army-camp/2.jpg" alt="" srcset="" class="is-background">
+              </div>
+              <div class="has-background">
+                <img src="img/army-camp/3.jpg" alt="" srcset="" class="is-background">
+              </div>
+              <div class="has-background">
+                <img src="img/army-camp/4.jpg" alt="" srcset="" class="is-background">
+              </div>
+              <div class="has-background">
+                <img src="img/army-camp/5.jpg" alt="" srcset="" class="is-background">
+              </div>
+              <div class=" has-background">
+                <img src="img/army-camp/6.jpg" alt="" srcset="" class="is-background">
+              </div>
+              <div class=" has-background">
+                <img src="img/army-camp/7.jpg" alt="" srcset="" class="is-background">
+              </div>
+            </div>
+            <!-- End Carousel -->
+
+          </div>
+
+          <!-- <div class="main-carousel project"
+            data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": true }'>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/1.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/2.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/3.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/4.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/5.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/6.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/7.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-cell project">
+              <img class="image" src="img/army-camp/8.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>-->
+
+          <div class="column">
+            <section class="section slideanim">
+              <div class="pagetitle">
+                <h1 class="title" style="margin-bottom: 5%; padding-bottom: 2%;">
+                  Ministry of Defense: Bridgend Army Camp
+                </h1>
+              </div>
+
+              <h2 class="subtitle">
+                The Ministry of Defence (M.O.D.) has been a long term client and we
+                have completed numerous projects over the years, including St Athan,
+                Maindy Barracks and Brigend AFC pictured beside.
+              </h2>
+              <h2 class="subtitle">
+                We undertook an external and internal refurbishment of the building,
+                replacing cladding, doors and redecorating the interior including
+                modification of mechanical and electrical services.
+              </h2>
+            </section>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer class="footer-project">
+    <div class="content has-text-centered">
+      <img src="img/footer.png" alt="" />
+
+      <p>
+        Telephone:
+        <a href="tel:02920626524">029 20626524</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:
+        <a href="mailto:info@godwincontractingservices.com">info@godwincontractingservices.com</a>
+      </p>
+      <p>
+        <a href="https://goo.gl/maps/YVZiUjW36Zn9izgz9">Ty Maen Farm House, Mountain Road, CAERPHILLY, CF83 8ER
+        </a>
+      </p>
+      <p>Copyright © 2019 Godwin Contracting Services Ltd.</p>
+
+      <p>
+        <a>Privacy Policy</a>
+        &nbsp;|&nbsp;
+        <a>Cookies Policy</a>
+        &nbsp;|&nbsp;
+        <a>Terms and Conditions</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/preloader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <script>
+    bulmaCarousel.attach('#carousel-demo', {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+      autoplay: true,
+      pagination: true,
+      breakpoints: [{
+        changePoint: 480,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }, {
+        changePoint: 640,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }, {
+        changePoint: 768,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }]
+    });
+  </script>
+
+</body>
+
+</html>
