@@ -150,7 +150,8 @@
 
 			<div class="has-background">
 				<picture>
-					<source srcset="img/slideshow/ystrad-mynach-school-mobile.jpg" media="(max-width: 768px)" class="is-background">
+					<source srcset="img/slideshow/ystrad-mynach-school-mobile.jpg" media="(max-width: 768px)"
+						class="is-background">
 					<img srcset="img/slideshow/ystrad-mynach-school.jpg" alt="..." class="is-background">
 				</picture>
 			</div>
@@ -229,21 +230,18 @@
 		</div>
 	</div>
 
-	<!-- our clients -->
+	<!-- gallery -->
 	<div class="hero is-large">
 		<div class="hero-body slideanim">
-			<div class="container" id="clients">
+			<div class="container" id="gallery">
 				<div class="pagetitle has-text-centered">
 					<h1 class="title">
-						Our Clients
+						Gallery
 					</h1>
 				</div>
 
 				<h2 class="subtitle has-text-justified">
-					Some of our clients include MOD, NHS
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et explicabo alias ex quos error
-					quia ab obcaecati sint blanditiis veritatis ad voluptate, aperiam, autem, dicta repellendus nihil
-					nesciunt odio.
+					Some of our latest works around South Wales
 				</h2>
 				<!-- first row -->
 				<div class="tile is-ancestor">
@@ -326,6 +324,63 @@
 				</div>
 
 			</div>
+		</div>
+	</div>
+
+
+	<!-- our clients -->
+	<div class="hero is-large">
+		<div class="hero-body slideanim">
+			<div class="container" id="clients">
+				<div class="pagetitle has-text-centered">
+					<h1 class="title">
+						We Work With
+					</h1>
+				</div>
+
+				<!-- <h2 class="subtitle has-text-justified">
+					Some of our clients include MOD, NHS
+				</h2> -->
+
+			
+
+
+				<!-- Start Carousel -->
+				<div id="carousel-clients" class="carousel" style="overflow: hidden; line-height: 0;">
+					<div class="">
+
+						<img src="img/clients/nhs-logo.png" alt="" class="" style="">
+
+					</div>
+					<div class="">
+
+						<img src="img/clients/caerphilly-logo.png" alt="" class="">
+
+					</div>
+					<div class="">
+						<img src="img/clients/national-museum-logo.png" alt="" class="" style="margin-left: 15% !important;">
+
+					</div>
+					<div class="">
+						<img src="img/clients/south-wales-police-logo.png" alt="" class="" style="">
+
+					</div>
+					<div class="">
+
+						<img src="img/clients/mod-rfca-logo.png" alt="" srcset="" class="" style="">
+
+					</div>
+					<div class="">
+
+						<img src="img/clients/church-of-wales.png" alt="" srcset="" class="" style="">
+
+					</div>
+
+				</div>
+				<!-- End Carousel -->
+
+			</div>
+
 		</div>
 	</div>
 
@@ -613,6 +668,31 @@
 			}, {
 				changePoint: 768,
 				slidesToShow: 1,
+				slidesToScroll: 1
+			}]
+		});
+	</script>
+
+	<script>
+		bulmaCarousel.attach('#carousel-clients', {
+			slidesToScroll: 1,
+			slidesToShow: 5,
+			// remember to change autoplay to true
+			autoplay: false, 
+			pagination: false,
+			infinite: true,
+			loop: true,
+			breakpoints: [{
+				changePoint: 480,
+				slidesToShow: 5,
+				slidesToScroll: 1
+			}, {
+				changePoint: 640,
+				slidesToShow: 5,
+				slidesToScroll: 1
+			}, {
+				changePoint: 768,
+				slidesToShow: 5,
 				slidesToScroll: 1
 			}]
 		});

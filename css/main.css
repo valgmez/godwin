@@ -459,3 +459,18 @@ form .subtitle {
   height: 8rem;
   margin-top: -8rem;
 }
+o
+
+#carousel-clients img {
+  height: 100px;
+  padding: 10%;
+}
+
+#carousel-clients .slider-item {
+  width: 200px !important;
+}
+
+:focus {
+  outline: none;
+}
+
