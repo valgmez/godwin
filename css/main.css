@@ -246,6 +246,7 @@ body {
 
 
 .tile.is-child.box .imghover {
+  border-radius: 6px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -253,13 +254,14 @@ body {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s ease;
-  background-color: rgba(241, 108, 0, 0.664);
+  /* background-color: rgba(241, 108, 0, 0.664); */
+  background-color: rgba(71, 69, 69, 0.4);
 }
 
 .tile.is-child.box:hover .imghover {
-  opacity: 1;
+  opacity: 0;
 }
 
 .tile.is-child.box .subtitle {
